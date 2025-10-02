@@ -30,29 +30,18 @@ This document is organized as follows:
 
 **Key Terms and Definitions**
 
-|  |  |  |  |  |
-|---------------|---------------|---------------|---------------|---------------|
-|  |  |  |  |  |
-|  | **Term** |  | **Definition** |  |
-|  |  |  |  |  |
-|  | Conditional Probability |  | Likelihood of an event given specific conditions |  |
-|  |  |  |  |  |
-|  | Consider Region |  | Inconclusive results between MV and TV |  |
-|  |  |  |  |  |
-|  | Go Region |  | Results meet or exceed TV with the prespecified level of evidence |  |
-|  |  |  |  |  |
-|  | Minimum Value (MV) |  | The lowest acceptable outcome for success |  |
-|  |  |  |  |  |
-|  | No Go Region |  | Results below MV |  |
-|  |  |  |  |  |
-|  | Probability of Success (PoS) |  | The likelihood of achieving a successful outcome |  |
-|  |  |  |  |  |
-|  | Statistical Power |  | The probability of detecting a true effect if it exists |  |
-|  |  |  |  |  |
-|  | Target Value (TV) |  | The desired optimal outcome |  |
-|  |  |  |  |  |
-|  | Unconditional Probability |  | Likelihood of achieving objectives across a range of scenarios |  |
-|  |  |  |  |  |
+|  |  |
+|-------------------------|-------------------------------------------------|
+| **Term** | **Definition** |
+| Conditional Probability | Likelihood of an event given specific conditions |
+| Consider Region | Inconclusive results between MV and TV |
+| Go Region | Results meet or exceed TV with the prespecified level of evidence |
+| Minimum Value (MV) | The lowest acceptable outcome for success |
+| No Go Region | Results below MV |
+| Probability of Success (PoS) | The likelihood of achieving a successful outcome |
+| Statistical Power | The probability of detecting a true effect if it exists |
+| Target Value (TV) | The desired optimal outcome |
+| Unconditional Probability | Likelihood of achieving objectives across a range of scenarios |
 
 ::: {.callout-tip icon="false"}
 ## 💡 Helpful Tip:
@@ -164,21 +153,14 @@ This prior knowledge about the plausible range and likelihood of the true effect
 
 To demonstrate PoS as average power, consider this simplified example with discrete values:
 
-|     |                           |     |                       |     |           |     |
-|----------|---------------|----------|------------|----------|----------|----------|
-|     |                           |     |                       |     |           |     |
-|     | **True Treatment Effect** |     | **Prior Probability** |     | **Power** |     |
-|     |                           |     |                       |     |           |     |
-|     | -1                        |     | 5%                    |     | \~0%      |     |
-|     |                           |     |                       |     |           |     |
-|     | 0                         |     | 20%                   |     | 2.5%      |     |
-|     |                           |     |                       |     |           |     |
-|     | 1                         |     | 25%                   |     | 28.8%     |     |
-|     |                           |     |                       |     |           |     |
-|     | 2                         |     | 45%                   |     | 80.0%     |     |
-|     |                           |     |                       |     |           |     |
-|     | 3                         |     | 15%                   |     | 98.8%     |     |
-|     |                           |     |                       |     |           |     |
+|                           |                       |           |
+|---------------------------|-----------------------|-----------|
+| **True Treatment Effect** | **Prior Probability** | **Power** |
+| -1                        | 5%                    | \~0%      |
+| 0                         | 20%                   | 2.5%      |
+| 1                         | 25%                   | 28.8%     |
+| 2                         | 45%                   | 80.0%     |
+| 3                         | 15%                   | 98.8%     |
 
 **Average Power (PoS) = 58.3%**
 
@@ -202,11 +184,11 @@ To demonstrate PoS as average power, consider this simplified example with discr
 
 -   ***Informative Prior*** **(e.g., large, convincing Phase 2):** If prior data is strong (narrow confidence intervals of treatment effect), the prior distribution is sharply focused. In this case, the PoS approaches the value of traditional power, reflecting greater confidence in the expected effect size.
 
-*Example*: A Phase 3 trial is planned to have 90% power to detect a treatment effect of \$\$θ=2\$\$ If we had a very small Phase 2 our prior would be uninformative and flat (left figure),  
+*Example*: A Phase 3 trial is planned to have 90% power to detect a treatment effect of **θ=2** If we had a very small Phase 2 our prior would be uninformative and flat (left figure),  
 
 Prior results were encouraging with wide confidence interval suggesting a 20% chance the true effect is actually zero or negative (e.g. p-value of 0.2). In a very large Phase 3 trial, you cannot eliminate the 20% chance that the treatment is ineffective. Therefore, the PoS for the next study is capped at 80% (1 - 0.20), regardless of sample size. 
 
-![](Images/Picture1.png)
+![](Images/Picture1.png){width="745"}
 
 ::: {.callout-tip icon="false"}
 ## 💡 Helpful Tip:
