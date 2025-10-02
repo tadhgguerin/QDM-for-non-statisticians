@@ -31,7 +31,7 @@ This document is organized as follows:
 **Key Terms and Definitions**
 
 |  |  |
-|-------------------------|-------------------------------------------------|
+|----|----|
 | **Term** | **Definition** |
 | Conditional Probability | Likelihood of an event given specific conditions |
 | Consider Region | Inconclusive results between MV and TV |
@@ -81,9 +81,9 @@ Different stakeholders will have different ideas of what success might entail. T
 
 **Operational Success**
 
-Clinical Operations: Achieving timely recruitment and data availability for interim or final analyses, especially when strategic or competitive timelines are involved
+-   Clinical Operations: Achieving timely recruitment and data availability for interim or final analyses, especially when strategic or competitive timelines are involved
 
-Manufacturing: Ensuring the drug can be produced to specification
+-   Manufacturing: Ensuring the drug can be produced to specification
 
 **Market Success**
 
@@ -97,6 +97,12 @@ Manufacturing: Ensuring the drug can be produced to specification
 Explain these key criteria as a checklist. Emphasize that overall program success often requires ticking multiple boxes, not just achieving statistical significance on one endpoint.
 :::
 
+::: {.callout-tip icon="false"}
+## 💡Helpful Tip:
+
+You can illustrate how PoS helps evaluate trade-offs: "For instance, if we broaden inclusion criteria to accelerate Phase 3 recruitment (an operational win), this might impact the observed treatment effect or safety profile, and consequently, the PoS for regulatory approval."
+:::
+
 These success criteria should be combined in a stepwise fashion, for example:
 
 **Phase 3 study success (Efficacy × Safety)**: Obtaining statistically significant and clinically relevant results that support the drug effectiveness in one or multiple studies, with a proportionate and acceptable safety profile in the context of the drug therapeutic benefits.
@@ -106,12 +112,6 @@ These success criteria should be combined in a stepwise fashion, for example:
 **Market Success (Efficacy × Safety × Regulatory × Market)**: Regulatory success whilst also meeting TPP targets.
 
 Sometimes the different types of success are inherently linked and shouldn't be assumed as independent success probabilities that can be multiplied together.
-
-::: {.callout-tip icon="false"}
-## 💡Helpful Tip:
-
-You can illustrate how PoS helps evaluate trade-offs: "For instance, if we broaden inclusion criteria to accelerate Phase 3 recruitment (an operational win), this might impact the observed treatment effect or safety profile, and consequently, the PoS for regulatory approval."
-:::
 
 Balancing diverse success objectives to design an optimal study or development program requires input from multiple stakeholders and a clear understanding of the interrelationships among key factors (ICH E8(R1)).
 
@@ -180,9 +180,9 @@ To demonstrate PoS as average power, consider this simplified example with discr
 
 **Impact of Prior Uncertainty**: The precision of prior distribution significantly influences the PoS.
 
--   ***Uninformative Prior*** **(e.g., very small Phase 2):** When existing data is limited and uncertain (wide confidence intervals of treatment effect), the prior distribution is spread out. The resulting PoS for the next trial might be close to 50%, reflecting that the existing evidence does not strongly support either success or failure, regardless of how large the next trial is.
+-   **Uninformative Prior** **(e.g., very small Phase 2):** When existing data is limited and uncertain (wide confidence intervals of treatment effect), the prior distribution is spread out. The resulting PoS for the next trial might be close to 50%, reflecting that the existing evidence does not strongly support either success or failure, regardless of how large the next trial is.
 
--   ***Informative Prior*** **(e.g., large, convincing Phase 2):** If prior data is strong (narrow confidence intervals of treatment effect), the prior distribution is sharply focused. In this case, the PoS approaches the value of traditional power, reflecting greater confidence in the expected effect size.
+-   **Informative Prior** **(e.g., large, convincing Phase 2):** If prior data is strong (narrow confidence intervals of treatment effect), the prior distribution is sharply focused. In this case, the PoS approaches the value of traditional power, reflecting greater confidence in the expected effect size.
 
 *Example*: A Phase 3 trial is planned to have 90% power to detect a treatment effect of **θ=2** If we had a very small Phase 2 our prior would be uninformative and flat (left figure),  
 
@@ -276,7 +276,7 @@ Go/No Go/Consider Regions are used to categorize the trial outcomes based on the
 
 -   **No-Go Region**: Results weak enough that we're confident (e.g. 80%+ probability) the drug falls short of TV
 
--   **Consider Region**: Results in the middle ground between MV and TV where we can't confidently place the drug in either category—more data or different approaches may be needed
+-   **Consider Region**: Results in the middle ground between MV and TV where we can't confidently place the drug in either category—more data or assessment of different endpoints may be needed
 
 One example of scenarios falling into Go, No Go and Consider regions can be seen in figure below (Fewer et al, 2016).
 
@@ -284,7 +284,7 @@ One example of scenarios falling into Go, No Go and Consider regions can be seen
 
 **Graphical Approaches: Lalonde Plots**
 
-Go, No Go and Consider region plots (Lalonde plots or wave plots) allow the study team to explore their study design over a range of treatment effects. They are particularly helpful communicating a range of treatment effects with non-statisticians as they:
+Go, No Go and Consider region plots (known as Lalonde plots or wave plots) allow the study team to explore their study design over a range of treatment effects. They are particularly helpful communicating a range of treatment effects with non-statisticians as they:
 
 -   **Provide Visual Clarity**: The plot uses clear colour-coded bands (green, yellow, red) to represent different decision outcomes. This makes it easy to understand at a glance whether a treatment is likely to be successful (Go), needs further consideration (Consider), or is unlikely to be effective (No Go).
 
