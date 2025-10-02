@@ -293,8 +293,10 @@ ul.task-list li input[type="checkbox"] {
 <li>Approval Readiness: Meeting the requirements of regulatory agencies, including alignment with expectations for efficacy and safety</li>
 </ul>
 <p><strong>Operational Success</strong></p>
-<p>Clinical Operations: Achieving timely recruitment and data availability for interim or final analyses, especially when strategic or competitive timelines are involved</p>
-<p>Manufacturing: Ensuring the drug can be produced to specification</p>
+<ul>
+<li><p>Clinical Operations: Achieving timely recruitment and data availability for interim or final analyses, especially when strategic or competitive timelines are involved</p></li>
+<li><p>Manufacturing: Ensuring the drug can be produced to specification</p></li>
+</ul>
 <p><strong>Market Success</strong></p>
 <ul>
 <li><p>Market Potential: Aligning with a Target Product Profile (TPP) that supports sales targets and market share</p></li>
@@ -313,11 +315,6 @@ ul.task-list li input[type="checkbox"] {
 <p>Explain these key criteria as a checklist. Emphasize that overall program success often requires ticking multiple boxes, not just achieving statistical significance on one endpoint.</p>
 </div>
 </div>
-<p>These success criteria should be combined in a stepwise fashion, for example:</p>
-<p><strong>Phase 3 study success (Efficacy × Safety)</strong>: Obtaining statistically significant and clinically relevant results that support the drug effectiveness in one or multiple studies, with a proportionate and acceptable safety profile in the context of the drug therapeutic benefits.</p>
-<p><strong>Regulatory success (Efficacy × Safety × Regulatory)</strong>: Meeting phase 3 study success criteria and having drug approved by target regulatory agencies.</p>
-<p><strong>Market Success (Efficacy × Safety × Regulatory × Market)</strong>: Regulatory success whilst also meeting TPP targets.</p>
-<p>Sometimes the different types of success are inherently linked and shouldn’t be assumed as independent success probabilities that can be multiplied together.</p>
 <div class="callout callout-style-default callout-tip no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -331,6 +328,11 @@ ul.task-list li input[type="checkbox"] {
 <p>You can illustrate how PoS helps evaluate trade-offs: “For instance, if we broaden inclusion criteria to accelerate Phase 3 recruitment (an operational win), this might impact the observed treatment effect or safety profile, and consequently, the PoS for regulatory approval.”</p>
 </div>
 </div>
+<p>These success criteria should be combined in a stepwise fashion, for example:</p>
+<p><strong>Phase 3 study success (Efficacy × Safety)</strong>: Obtaining statistically significant and clinically relevant results that support the drug effectiveness in one or multiple studies, with a proportionate and acceptable safety profile in the context of the drug therapeutic benefits.</p>
+<p><strong>Regulatory success (Efficacy × Safety × Regulatory)</strong>: Meeting phase 3 study success criteria and having drug approved by target regulatory agencies.</p>
+<p><strong>Market Success (Efficacy × Safety × Regulatory × Market)</strong>: Regulatory success whilst also meeting TPP targets.</p>
+<p>Sometimes the different types of success are inherently linked and shouldn’t be assumed as independent success probabilities that can be multiplied together.</p>
 <p>Balancing diverse success objectives to design an optimal study or development program requires input from multiple stakeholders and a clear understanding of the interrelationships among key factors (ICH E8(R1)).</p>
 </section>
 <section id="success-at-the-individual-study-level" class="level3">
@@ -426,8 +428,8 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>Key Properties of PoS</strong>:</p>
 <p><strong>Impact of Prior Uncertainty</strong>: The precision of prior distribution significantly influences the PoS.</p>
 <ul>
-<li><p><strong><em>Uninformative Prior</em></strong> <strong>(e.g., very small Phase 2):</strong> When existing data is limited and uncertain (wide confidence intervals of treatment effect), the prior distribution is spread out. The resulting PoS for the next trial might be close to 50%, reflecting that the existing evidence does not strongly support either success or failure, regardless of how large the next trial is.</p></li>
-<li><p><strong><em>Informative Prior</em></strong> <strong>(e.g., large, convincing Phase 2):</strong> If prior data is strong (narrow confidence intervals of treatment effect), the prior distribution is sharply focused. In this case, the PoS approaches the value of traditional power, reflecting greater confidence in the expected effect size.</p></li>
+<li><p><strong>Uninformative Prior</strong> <strong>(e.g., very small Phase 2):</strong> When existing data is limited and uncertain (wide confidence intervals of treatment effect), the prior distribution is spread out. The resulting PoS for the next trial might be close to 50%, reflecting that the existing evidence does not strongly support either success or failure, regardless of how large the next trial is.</p></li>
+<li><p><strong>Informative Prior</strong> <strong>(e.g., large, convincing Phase 2):</strong> If prior data is strong (narrow confidence intervals of treatment effect), the prior distribution is sharply focused. In this case, the PoS approaches the value of traditional power, reflecting greater confidence in the expected effect size.</p></li>
 </ul>
 <p><em>Example</em>: A Phase 3 trial is planned to have 90% power to detect a treatment effect of <strong>θ=2</strong> If we had a very small Phase 2 our prior would be uninformative and flat (left figure), &nbsp;</p>
 <p>Prior results were encouraging with wide confidence interval suggesting a 20% chance the true effect is actually zero or negative (e.g.&nbsp;p-value of 0.2). In a very large Phase 3 trial, you cannot eliminate the 20% chance that the treatment is ineffective. Therefore, the PoS for the next study is capped at 80% (1 - 0.20), regardless of sample size.&nbsp;</p>
@@ -541,12 +543,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p><strong>Go Region</strong>: Results strong enough that we’re confident (e.g.&nbsp;80%+ probability) the drug exceeds our MV</p></li>
 <li><p><strong>No-Go Region</strong>: Results weak enough that we’re confident (e.g.&nbsp;80%+ probability) the drug falls short of TV</p></li>
-<li><p><strong>Consider Region</strong>: Results in the middle ground between MV and TV where we can’t confidently place the drug in either category—more data or different approaches may be needed</p></li>
+<li><p><strong>Consider Region</strong>: Results in the middle ground between MV and TV where we can’t confidently place the drug in either category—more data or assessment of different endpoints may be needed</p></li>
 </ul>
 <p>One example of scenarios falling into Go, No Go and Consider regions can be seen in figure below (Fewer et al, 2016).</p>
 <p><img src="Images/Picture4.png" class="img-fluid"></p>
 <p><strong>Graphical Approaches: Lalonde Plots</strong></p>
-<p>Go, No Go and Consider region plots (Lalonde plots or wave plots) allow the study team to explore their study design over a range of treatment effects. They are particularly helpful communicating a range of treatment effects with non-statisticians as they:</p>
+<p>Go, No Go and Consider region plots (known as Lalonde plots or wave plots) allow the study team to explore their study design over a range of treatment effects. They are particularly helpful communicating a range of treatment effects with non-statisticians as they:</p>
 <ul>
 <li><p><strong>Provide Visual Clarity</strong>: The plot uses clear colour-coded bands (green, yellow, red) to represent different decision outcomes. This makes it easy to understand at a glance whether a treatment is likely to be successful (Go), needs further consideration (Consider), or is unlikely to be effective (No Go).</p></li>
 <li><p><strong>Intuitive to Understand</strong>: The Y-axis shows the probability, which is a familiar concept even to those without a statistical background. Seeing how these probabilities change with different treatment effects on the X-axis helps in understanding the overall effectiveness.</p></li>
